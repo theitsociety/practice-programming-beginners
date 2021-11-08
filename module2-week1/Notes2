@@ -1,0 +1,73 @@
+
+ Degisken nedir? Neden var?
+
+ Java types
+    Primitive types vs Complex(reference) types
+
+ Primitive types - 8 data types
+    byte, short, int, long, float, double, boolean, char
+    Size ve data type hierarchy
+
+ byte - 8
+ short - 16
+ int - 32
+ long - 64
+
+ float - 32
+ double - 64
+
+ boolean - 1 - true-false
+ char - 16
+
+
+ Good to know
+    1.
+    You can have underscores in numbers to make them easier to read:
+         int million1 = 1000000;
+
+         int million2 = 1_000_000;
+
+    We’d rather be reading the latter one because the zeroes don’t run together. You can add
+    underscores anywhere except at the beginning of a literal, the end of a literal, right before a
+    decimal point, or right after a decimal point. Let’s look at a few examples:
+
+     double notAtStart = _1000.00; // DOES NOT COMPILE
+     double notAtEnd = 1000.00_; // DOES NOT COMPILE
+     double notByDecimal = 1000_.00; // DOES NOT COMPILE
+     double annoyingButLegal = 1_00_0.0_0; // this one compiles
+
+     2.
+     You do not have to know this for the exam, but the maximum number an int can hold is
+             2,147,483,647.
+     How do we know this? One way is to have Java tell us:
+
+     System.out.println(Integer.MAX_VALUE);
+
+     The other way is with math. An int is 32 bits. 232 is 4,294,967,296. Divide that by 2 and
+     you get 2,147,483,648. Then subtract 1 as we did with bytes and you get 2,147,483,647. It’s
+     easier to just ask Java to print the value, isn’t it?
+
+
+ Common Errors
+    - Case Sensitive
+
+            double interestRate = 0.05;
+            double interest = interestrate * 45;
+
+    - overflow and underflow
+
+ Recap
+    Book - Head first java
+
+
+ OCA Questions  - 6 Questions
+ Practice - 4 Questions
+
+
+ 40 - 10 - 40
+
+
+
+
+
+
